@@ -70,6 +70,20 @@
 
 > 💡 **为什么重要**: 掌握Git和GitHub协作流程是现代开发者的必备技能，这些技能在开源贡献和团队协作中至关重要。
 
+#### [⚙️ LLM+X系列课程环境配置指南V1](./LLM+X系列课程环境配置指南V1.md)
+**分阶段环境配置完整指南**
+
+- **适用对象**: LLM+X课程学员和AI开发初学者
+- **解决问题**: 系统性配置AI开发所需的完整技术栈环境
+- **包含内容**:
+  - Python + PyTorch深度学习环境配置
+  - 全栈开发环境（Node.js + Java + 数据库）
+  - WSL2配置和开发工具安装
+  - 向量数据库和PDF处理工具
+  - Docker部署环境和常见问题解决
+
+> 💡 **为什么重要**: 正确的环境配置是AI项目开发的基础，这个指南能帮你避免常见的环境冲突问题，为后续的实际开发打下坚实基础。
+
 ### 课程大纲
 *即将发布*
 
@@ -96,6 +110,7 @@
    - 首先解决GitHub访问问题（大陆链接Github教程）
    - 然后注册GitHub账号（注册Github账号）
    - 接着学习提问技巧（提问的智慧）
+   - 配置开发环境（LLM+X系列课程环境配置指南V1）
    - 最后掌握作业提交流程（作业提交指南）
 2. **理论结合实践**: 不要只是阅读，尝试实际操作每个教程中的步骤
 3. **主动参与**: 在学习过程中遇到问题时，运用《提问的智慧》中的方法来寻求帮助
@@ -103,10 +118,18 @@
 
 ## 🔗 相关链接
 
+### 基础平台
 - [GitHub官网](https://github.com) - 全球最大的代码托管平台
 - [octocaptcha.com](https://octocaptcha.com) - GitHub注册验证替换服务
 - [Stack Overflow](https://stackoverflow.com) - 技术问答社区
 - [Google搜索技巧](https://www.google.com/search/howto/search-operators.html) - 提高搜索效率的技巧
+
+### 开发环境工具
+- [Anaconda官网](https://www.anaconda.com/) - Python数据科学平台
+- [PyTorch官网](https://pytorch.org/) - 深度学习框架
+- [VSCode官网](https://code.visualstudio.com/) - 推荐代码编辑器
+- [Docker Desktop](https://www.docker.com/products/docker-desktop/) - 容器化平台
+- [Node.js官网](https://nodejs.org/) - JavaScript运行环境
 
 ## 📞 联系我们
 
