@@ -127,4 +127,11 @@ A：完全不影响！这个修改只针对GitHub相关网站
 
 ---
 
-> 🎉 恭喜！现在你应该可以正常访问GitHub了
+写在最后，如果上述的方案不能满足你的要求，而你又是 Windows系统
+
+- 访问 [host文件下载](https://raw.hellogithub.com/hosts) 得到最新的 hosts文件
+
+- 打开本地文件目录 `C:\Windows\System32\drivers\etc`，将下载的hosts文件放在目录里（如原本有文件则进行替换，若没有hosts文件就直接复制即可）
+
+- 刷新本机DNS后再次尝试登录Github
+
