@@ -23,8 +23,8 @@
 ```
 Python 3.10.x（推荐3.10.12）
 ├── 安装方式：Anaconda或Miniconda
-├── 虚拟环境：conda create -n llm-saas python=3.10
-└── 激活环境：conda activate llm-saas
+├── 虚拟环境：conda create -n llm-x-1 python=3.10
+└── 激活环境：conda activate llm-x-1
 ```
 
 #### 3. 深度学习框架（第2周必装）
