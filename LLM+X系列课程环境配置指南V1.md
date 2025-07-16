@@ -205,10 +205,9 @@ try:
 except:
     print("Transformers not installed")
 
-# 继续添加其他库的检查...
 ```
 
-### 最后的建议
+### 建议
 
 1. **使用虚拟环境**：避免依赖冲突
 2. **优先Docker**：数据库等服务优先使用Docker，避免污染本地环境
