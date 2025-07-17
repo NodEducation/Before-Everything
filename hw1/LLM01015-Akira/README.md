@@ -1,0 +1,180 @@
+# LLM+X课程 - GitHub作业提交指南
+
+## 📚 概述
+
+本指南将帮助同学们了解如何通过GitHub的Fork和Pull Request（PR）方式提交作业。这是开源项目中常用的协作方式，掌握这个技能对未来的学习和工作都很有帮助。
+
+## 🎯 提交规则总览
+
+### 分支命名规则
+- 格式：`homework/课程期号-姓名-作业编号`
+- 示例：`homework/LLM_X_1-张三-hw1`
+
+### PR标题规则
+- 格式：`[作业编号] 课程期号-姓名`
+- 示例：`[HW1] LLM_X_1-张三`
+
+### 文件夹结构
+```
+作业编号/
+└── 学号-姓名/
+    ├── README.md (作业说明)
+    └── 其他作业文件
+```
+
+## 📝 详细步骤
+
+### Step 1: Fork项目仓库
+
+1. 打开课程的GitHub仓库页面
+2. 点击页面右上角的 **Fork** 按钮
+   ![Fork按钮通常在页面右上角]
+3. 等待Fork完成，你将被重定向到自己的仓库副本
+
+> 💡 **什么是Fork？** Fork就是在你的GitHub账号下创建一个项目的副本，你可以在这个副本上进行修改，而不影响原项目。
+
+### Step 2: Clone仓库到本地
+
+1. 在你Fork后的仓库页面，点击绿色的 **Code** 按钮
+2. 复制仓库地址（建议使用HTTPS）
+3. 打开终端/命令行，执行以下命令：
+
+```bash
+# 克隆仓库到本地
+git clone https://github.com/leo-asuka/Before-Everything.git
+
+# 进入项目目录
+cd Before-Everything
+```
+
+### Step 3: 添加上游仓库
+
+为了保持与原仓库同步，需要添加上游仓库：
+
+```bash
+# 添加上游仓库
+git remote add upstream https://github.com/NodEducation/Before-Everything.git
+
+# 验证远程仓库
+git remote -v
+```
+
+### Step 4: 创建作业分支
+
+⚠️ **重要**：每次作业都要创建新的分支！
+
+```bash
+# 确保在主分支上
+git checkout main
+
+# 拉取最新代码
+git pull upstream main
+
+# 创建并切换到新分支（按照命名规则）
+git checkout -b homework/LLM_X_1-Akira-hw1
+```
+
+### Step 5: 完成作业
+
+1. 在项目中创建作业文件夹：
+   ```bash
+   # 创建文件夹
+   mkdir -p hw1/LLM01015-Akira
+   ```
+
+2. 将作业文件放入对应文件夹
+3. 创建README.md说明文件，包含：
+   - 作业完成情况
+   - 运行环境说明
+   - 特殊说明（如有）
+
+### Step 6: 提交代码
+
+```bash
+# 查看修改状态
+git status
+
+# 添加所有修改的文件
+git add .
+
+# 提交修改（写清晰的提交信息）
+git commit -m "完成作业1：LLM基础实践"
+
+# 推送到你的远程仓库
+git push origin homework/LLM_X_1-Akira-hw1
+```
+
+### Step 7: 创建Pull Request
+
+1. 回到GitHub上你的仓库页面
+2. 你会看到一个提示："Your recently pushed branches"，点击 **Compare & pull request** 按钮
+3. 如果没有看到提示，点击 **Pull requests** 标签，然后点击 **New pull request**
+4. 填写PR信息：
+   - **标题**：按照规则填写，如 `[HW1] LLM_X_1-Akira`
+   - **描述**：简要说明作业完成情况，包括：
+     - ✅ 完成的任务
+     - 📝 额外说明
+     - ❓ 遇到的问题（如有）
+
+5. 确认无误后，点击 **Create pull request**
+
+### Step 8: 等待审核
+
+- 老师会审核你的作业并给出反馈
+- 如需修改，直接在同一分支上修改并推送，PR会自动更新
+- 审核通过后，你的作业就成功提交了！
+
+## 🔄 更新本地仓库
+
+定期同步上游仓库的更新：
+
+```bash
+# 切换到主分支
+git checkout main
+
+# 拉取上游更新
+git fetch upstream
+git merge upstream/main
+
+# 推送到自己的远程仓库
+git push origin main
+```
+
+## ❓ 常见问题
+
+### Q1: 提交错分支怎么办？
+A: 可以关闭当前PR，切换到正确的分支重新提交。
+
+### Q2: 如何修改已提交的作业？
+A: 在同一分支上继续修改并push，PR会自动更新。
+
+### Q3: 冲突怎么解决？
+A: 先拉取上游最新代码，在本地解决冲突后再提交。
+
+```bash
+git fetch upstream
+git merge upstream/main
+# 解决冲突后
+git add .
+git commit -m "解决合并冲突"
+git push origin 你的分支名
+```
+
+## 📋 检查清单
+
+提交前请确认：
+- [ ] 分支名称符合规范
+- [ ] 作业文件在正确的文件夹中
+- [ ] 包含README.md说明文件
+- [ ] PR标题符合规范
+- [ ] PR描述清晰完整
+- [ ] 代码可以正常运行
+
+## 💪 加油！
+
+掌握Git和GitHub的使用是成为优秀程序员的重要技能。如果遇到问题，不要害怕，可以：
+1. 查看GitHub官方文档
+2. 在课程群里询问
+3. 向老师或助教寻求帮助
+
+祝学习顺利！🎉
